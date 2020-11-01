@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tvEmpDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvEmpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmpCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/colorAsh"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="37dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btnAtt"
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:layout_below="@id/tvEmpCode"
+                    android:layout_gravity="center"
+                    android:background="@drawable/leave"
+                    android:onClick="startingPoint"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting Point"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnQrAtt"
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:layout_below="@id/tvEmpCode"
+                    android:layout_gravity="center"
+                    android:background="@drawable/leave"
+                    android:onClick="collectFuel"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collect Fuel"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:layout_below="@id/tvEmpCode"
+                    android:layout_gravity="center"
+                    android:background="@drawable/leave"
+                    android:onClick="endPoint"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="End Point"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:layout_below="@id/tvEmpCode"
+                    android:layout_gravity="center"
+                    android:background="@drawable/employeederectory"
+                    android:onClick="totallist"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Total List"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
